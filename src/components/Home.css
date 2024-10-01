@@ -1,0 +1,63 @@
+#home {
+  background-image: url('../assets/image.png'); /* Correct relative path */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Full viewport height */
+  color: white; /* Text color */
+  display: flex;
+  flex-direction: column;  /* Flexbox for centering content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center; /* Center text */
+}
+
+  
+  #home h1 {
+    font-size: 3rem;                            /* Large heading text */
+    margin-bottom: 20px;                        /* Space below the heading */
+    text-transform: uppercase;                  /* Make the heading uppercase */
+    letter-spacing: 2px;                        /* Add some letter spacing for emphasis */
+    animation: fadeInDown 1s ease-in-out;       /* Animation for the heading */
+  }
+  
+  #home p {
+    font-size: 1.25rem;                         /* Medium size for paragraph text */
+    margin-bottom: 30px;                        /* Space below the paragraph */
+    max-width: 800px;                           /* Limit width for readability */
+    line-height: 1.5;                           /* Improve readability */
+  }
+  
+  #home button {
+    background-color: #ffffff;                  /* Bootstrap primary blue button */
+    border: none; 
+                              /* Remove default border */
+    color: rgb(7, 0, 0);                               /* White text color */
+    padding: 10px 20px;                         /* Button padding */
+    font-size: 1.25rem;                         /* Larger font for button text */
+    border-radius: 5px;                         /* Slightly rounded corners */
+    cursor: pointer;                            /* Cursor changes to pointer on hover */
+    transition: background-color 0.3s ease;     /* Smooth transition on hover */
+  }
+  
+  #home button:hover {
+    
+    background-color: #ffffff;                  /* Darker blue on hover */
+  }
+  
+  /* Animation for heading */
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  

@@ -1,0 +1,80 @@
+/* Contact.css */
+
+.contact-section {
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the background image */
+    padding: 60px 20px; /* Spacing around the section */
+    color: white; /* White text for better contrast */
+    position: relative; /* For positioning the overlay */
+    min-height: 100vh; /* Ensure section takes full height */
+}
+
+.contact-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+    padding: 40px; /* Padding inside the overlay */
+    border-radius: 10px; /* Rounded corners for overlay */
+    max-width: 600px; /* Max width for the form */
+    margin: 0 auto; /* Center the form horizontally */
+    text-align: center; /* Center the text */
+}
+
+.contact-form {
+    display: flex; /* Flexbox layout for form */
+    flex-direction: column; /* Stack elements vertically */
+    text-align: left;
+    gap: 15px; /* Space between form elements */
+}
+
+.contact-form label {
+    font-size: 1.1rem; /* Slightly larger labels */
+    margin-bottom: 5px; /* Space below labels */
+    color: #fff; /* White label color */
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px; /* Padding inside inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+    border: none; /* Remove default border */
+    width: 100%; /* Full width of container */
+    background-color: #f0f0f0; /* Light background for inputs */
+    color: #333; /* Dark text color */
+    font-size: 1rem; /* Input font size */
+    outline: none; /* Remove default outline */
+}
+
+.contact-form textarea {
+    resize: none; /* Disable resizing */
+    height: 150px; /* Height for message box */
+}
+
+.contact-form button {
+    background-color: #007bff; /* Primary blue color */
+    color: white; /* White text */
+    padding: 12px; /* Padding for button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+    font-size: 1.1rem; /* Slightly larger font size */
+}
+
+.contact-form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.submission-alert {
+    margin-top: 20px; /* Space above alert */
+    color: lightgreen; /* Alert text color */
+    font-weight: bold; /* Emphasize the message */
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

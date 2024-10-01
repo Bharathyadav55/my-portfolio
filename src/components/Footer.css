@@ -1,0 +1,49 @@
+/* Footer.css */
+
+.footer {
+    background-color: #191a1d; /* Dark background for the footer */
+    color: #ffffff; /* White text color */
+    padding: 20px 0; /* Spacing around the footer */
+    text-align: center; /* Center align the text */
+}
+
+.footer-content {
+    max-width: 1200px; /* Max width for the content */
+    margin: 0 auto; /* Center the footer content */
+    padding: 0 20px; /* Padding on sides */
+}
+
+.footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 1rem; /* Font size for the copyright text */
+}
+
+.social-links {
+    margin-top: 10px; /* Space above social links */
+    display: flex; /* Use flexbox to align items */
+    justify-content: center; /* Center the social links */
+}
+
+.social-links a {
+    color: #ffffff; /* White text for links */
+    margin: 0 15px; /* Space between links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center align items vertically */
+}
+
+.social-links a svg {
+    margin-right: 5px; /* Space between icon and text */
+    font-size: 1.2rem; /* Icon size */
+}
+
+.social-links a:hover {
+    color: #007bff; /* Change color on hover */
+}
+@media (max-width: 600px) {
+    .social-icons {
+      flex-direction: column;
+    }
+  }
+  

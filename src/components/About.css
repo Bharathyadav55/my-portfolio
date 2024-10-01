@@ -1,0 +1,72 @@
+/* About.css */
+.skill-head {
+    color: #333;
+}
+
+#about-section {
+    background-color: white; /* Change background color to white */
+    color: #333; /* Dark text color */
+    padding: 40px 20px; /* Spacing around the section */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 800px; /* Maximum width */
+    margin: 0 auto; /* Centering */
+    animation: fadeIn 1s ease-out; /* Added fade-in animation */
+}
+
+.about-title {
+    font-size: 2.5rem; /* Title size */
+    font-weight: bold; /* Bold title */
+    text-align: center; /* Center the title */
+    margin-bottom: 10px; /* Space below title */
+    color: black; /* Change title color to black */
+    position: relative; /* Required for the underline */
+}
+
+.about-title::after {
+    content: ""; /* Create an empty content for the pseudo-element */
+    display: block; /* Make it a block element */
+    width: 50%; /* Width of the underline */
+    height: 3px; /* Height of the underline */
+    background-color: blue; /* Blue color for the underline */
+    margin: 10px auto 0; /* Centering the underline */
+    border-radius: 2px; /* Rounded corners */
+}
+
+.about-intro {
+    text-align: center; /* Center the introductory text */
+    font-size: 1.2rem; /* Text size */
+    margin-bottom: 20px; /* Space below intro text */
+    color: darkgray;
+}
+
+.skills-container {
+    display: flex; /* Align skills in a row */
+    flex-wrap: wrap; /* Wrap if not enough space */
+    justify-content: center; /* Center the skills */
+    margin: 20px 0; /* Space around skills */
+}
+
+.skill {
+    background-color: #ae0969; /* Skill badge color */
+    color: white; /* Text color for badges */
+    padding: 10px 15px; /* Padding for badges */
+    border-radius: 5px; /* Rounded corners */
+    margin: 5px; /* Space between badges */
+    font-weight: bold; /* Bold text */
+    transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+.skill:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

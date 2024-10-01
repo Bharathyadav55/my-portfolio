@@ -1,0 +1,108 @@
+/* styles.css */
+
+body {
+    background-color: #fffdfd; /* Dark background */
+    color: #e0e0e0; /* Light text */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+a {
+    color: #4b6cc1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffffff; /* Hover color */
+}
+
+section {
+    padding: 60px 20px;
+}
+
+h1, h2, h3 {
+    color: #ffffff; /* Light headings */
+}
+
+/* Button styles */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary {
+    background-color: #4b6cc1; /* Primary button color */
+}
+
+.btn-secondary {
+    background-color: #333; /* Secondary button color */
+}
+
+.btn-light {
+    background-color: #444; /* Light button color */
+}
+
+.btn:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+/* Global styles for the entire app */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', 'sans-serif'; /* Apply serif and sans-serif fonts globally */
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Optional: background color */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', 'sans-serif'; /* Ensure headings use the font family too */
+}
+
+p, span, a, div {
+    font-family: 'Source Sans Pro', 'sans-serif'; /* Apply the font family to all elements */
+}
+
+/* Responsive typography */
+body {
+    font-family: 'sans-serif', serif;
+    line-height: 1.6;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    .skills-container, .project-card-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .project-card img {
+      max-width: 100%;
+    }
+  
+    .footer {
+      flex-direction: column;
+    }
+  
+    .social-icons {
+      justify-content: center;
+    }
+  }
+  

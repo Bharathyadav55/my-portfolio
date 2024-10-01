@@ -1,0 +1,60 @@
+/* Navbar Background */
+.navbar-light {
+  background-color: #ffffff; /* Set background to white */
+  color: #000; /* Text color set to dark */
+  position: fixed; /* Make the navbar fixed */
+  top: 0; /* Align it to the top of the page */
+  width: 100%; /* Ensure it spans the full width of the page */
+  z-index: 999; /* Ensure it stays above other content */
+  padding: 10px 20px; /* Add padding for spacing */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
+}
+
+/* Navbar Brand and Links Styling */
+.navbar-light .navbar-brand {
+  color: #000; /* Change brand text color to dark */
+  font-weight: bold;
+}
+
+.navbar-light .nav-link {
+  color: #333; /* Darker text color */
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+}
+
+.navbar-light .nav-link:hover {
+  color: #000; /* Hover effect for nav links */
+}
+
+/* Fade-in Animation */
+.navbar-brand, .nav-link {
+  animation: fadeIn 1s ease-in-out;
+  text-transform: uppercase;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Rounded Profile Image */
+.rounded-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Adjusting the Body Padding */
+body {
+  padding-top: 70px; /* Adjust based on the height of your navbar */
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}

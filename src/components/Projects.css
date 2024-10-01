@@ -1,0 +1,105 @@
+/* Projects.css */
+
+.projects-section {
+    padding: 40px 20px; /* Spacing around the section */
+    background-color: #f9f9f9; /* Light background color */
+    color: #333; /* Dark text color */
+    text-align: center; /* Center align text */
+}
+
+.projects-section h2 {
+    font-size: 2.5rem; /* Heading size */
+    color: #333; /* Dark color for the heading */
+    margin-bottom: 30px; /* Space below heading */
+    text-transform: uppercase; /* Capitalize letters */
+    text-decoration: underline; /* Underline text */
+    text-decoration-color: green; /* Color of the underline */
+    animation: fadeIn 1s ease-in; /* Fade in effect for heading */
+}
+
+.project-card-container {
+    display: flex; /* Align project cards in a row */
+    flex-wrap: wrap; /* Wrap if there isn't enough space */
+    justify-content: center; /* Center align the project cards */
+}
+
+.project-card {
+    background-color: white; /* Card background color */
+    border-radius: 10px; /* Rounded corners */
+    margin: 15px; /* Space around cards */
+    overflow: hidden; /* Prevent overflow of content */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+    position: relative; /* Positioning context for hover effects */
+    max-width: 300px; /* Max width for cards */
+    animation: slideIn 0.5s ease-out; /* Slide in animation for cards */
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.project-image {
+    width: 100%; /* Full width image */
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Cover the container */
+}
+
+.project-card-content {
+    padding: 20px; /* Spacing inside the card */
+}
+
+.project-card-content h3 {
+    font-size: 1.5rem; /* Title size */
+    color: #333; /* Dark color for the title */
+    margin: 10px 0; /* Space around title */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.project-card-content p {
+    font-size: 1rem; /* Description text size */
+    color: #555; /* Lighter color for description */
+}
+
+.project-card-content button {
+    background-color: #007bff; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+}
+
+.project-card-content button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@media (max-width: 768px) {
+    .skills-container, .project-card-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  
+  
